@@ -12,4 +12,11 @@ public class AccountTest {
     public void depositAnAmountToIncreaseTheBalance() {
         assertThat("your first test").isBlank();
     }
+
+    @Test
+    public  void checkifDepositIsNotNegative()
+    {
+        Account account= new Account();
+        assertThat(account.GetBalanceAmount()>-1);
+    }
 }
